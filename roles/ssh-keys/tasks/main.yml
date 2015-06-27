@@ -1,0 +1,3 @@
+# Completes the following functions:
+# - Adds public keys to .ssh directories in root users .ssh on target machine
+# - Modfies the /etc/ssh/ssh_config to ensure pubkeyauth is active
