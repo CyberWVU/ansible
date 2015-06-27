@@ -1,0 +1,11 @@
+---
+# This is main
+
+ - include: apt_package.yml
+   when: ansible_pkg_mgr == 'apt'
+
+ - include: yum_package.yml
+   when: ansible_pkg_mgr == 'yum'
+
+ - name: Install Shellinabox
+
