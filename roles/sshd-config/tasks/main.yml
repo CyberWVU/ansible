@@ -1,7 +1,2 @@
-# Modify ssh config file to our needs
+# Sets up the sshd_config file to our specs
 
- - name: Enable pubkey auth
-   command: sed -i '/PubkeyAuthentication no/c\PubkeyAuthentication yes' /etc/ssh/sshd_config;
-
- - name: Permit root login
-   command: sed -i '/PermitRootLogin/c\PermitRootLogin without-password' /etc/ssh/sshd_config;

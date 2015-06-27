@@ -1,0 +1,5 @@
+# Permit root login via password only
+
+ - name: Permit root login
+   command: sed -i '/PermitRootLogin/c\PermitRootLogin without-password' /etc/sshd_config
+
