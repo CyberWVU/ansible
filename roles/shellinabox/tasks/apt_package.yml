@@ -3,9 +3,8 @@
 
  - name: Install shellinabox package via apt
    apt: >
-     name:=shellinabox
+     name=shellinabox
      state=latest
-  tags: packages
 
 # - name: Add shellinabox to init.d
 

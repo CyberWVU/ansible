@@ -1,0 +1,4 @@
+ - hosts: 172.20.2.105
+
+   roles: 
+    - shellinabox
