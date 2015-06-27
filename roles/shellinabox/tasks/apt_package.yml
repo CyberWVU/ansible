@@ -7,3 +7,6 @@
      state=latest
   tags: packages
 
+# - name: Add shellinabox to init.d
+
+
