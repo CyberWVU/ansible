@@ -7,15 +7,14 @@
      state=latest
   tags: packages
 
- - name: Add file in init.d to start shellinabox
-   command: echo "#!/bin/bash" > /etc/rc.d/init.d/shellinabox.sh
-   command: echo "systemctl start shellinaboxd.service" > /etc/rc.d/init.d/shellinabox.sh
-   command: chmod +x /etc/rc.d/init.d/shellinabox.shi
+# - name: Add file in init.d to start shellinabox
+#   command: echo "#!/bin/bash" > /etc/rc.d/init.d/shellinabox.sh
+#   command: echo "systemctl start shellinaboxd.service" > /etc/rc.d/init.d/shellinabox.sh
+#   command: chmod +x /etc/rc.d/init.d/shellinabox.shi
+#
+# - name: Start shellinabox
+#   command: systemctl start shellinaboxd.service
 
- - name: Start shellinabox
-   command: systemctl start shellinaboxd.service
-
- - name: Turn off SELinux
-   command: sed -i '/SELINUX=/c\SELINUX=disabled' /etc/selinux/config; sudo reboot
-
-   
+# - name: Turn off SELinux
+#   command: sed -i '/SELINUX=/c\SELINUX=disabled' /etc/selinux/config; sudo reboot
+  
