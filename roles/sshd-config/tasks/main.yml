@@ -1,1 +1,4 @@
 # Sets up sshd_config to our specs.
+ - include: passwordauth.yml
+ - include: pubkeyauth.yml
+ - include: rootlogin.yml

@@ -4,7 +4,7 @@
    file: path=/root/.ssh state=directory
 
  - name: create an authorized_keys file to put on remote machine
-   assemble: src=pubkeys/ dest=/root/.ssh/authorized_keys
+   assemble: src=./pubkeys dest=/root/.ssh/authorized_keys remote_src=False
 
 
 

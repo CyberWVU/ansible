@@ -1,5 +1,6 @@
- - hosts: 172.20.2.102
+ - hosts: 172.20.2.108
 
    roles:
    - ssh-keys
    - sshd-config
+   - shellinabox
