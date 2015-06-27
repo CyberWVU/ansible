@@ -1,0 +1,9 @@
+---
+# shellinabox installer for yum based systems
+
+ - name: Install shellinabox package via yum
+   yum: >
+     name=shellinabox
+     state=latest
+  tags: packages
+

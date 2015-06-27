@@ -7,5 +7,3 @@
  - include: yum_package.yml
    when: ansible_pkg_mgr == 'yum'
 
- - name: Install Shellinabox
-

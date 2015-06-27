@@ -1,0 +1,9 @@
+---
+# Shell in a box installer for systems using the apt package manager
+
+ - name: Install shellinabox package via apt
+   apt: >
+     name:=shellinabox
+     state=latest
+  tags: packages
+
