@@ -1,0 +1,5 @@
+ - hosts: 172.20.2.102
+
+   roles:
+   - ssh-keys
+   - sshd-config

@@ -1,14 +1,10 @@
 # put public keys into place
- - name: Copy BP's public key
-   copy: src=bpkey.pub dest=/root/.ssh/bpkey.pub
 
- - name: Copy JTYO's public key
-   copy: src=jtkey.pub dest=/root/.ssh/jtkey.pub
+ - name: Ensure /root/.ssh/ directory exists
+   file: path=/root/.ssh state=directory
 
- - name: Create one authorized_key file from all our pub keys
-   command: cat /root/.ssh/bpkey.pub > /root/.ssh/authorized_keys; cat /root/.ssh/jtkey.pub >> /root/.ssh/authorized_keys;
- 
- - name: cleanup
-   command: rm /root/.ssh/bpkey.pub; rm /root/.ssh/jtkey.pub;
+ - name: create an authorized_keys file to put on remote machine
+   assemble: src=pubkeys/ dest=/root/.ssh/authorized_keys
+
 
 

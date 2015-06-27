@@ -1,4 +1,0 @@
-# Modify ssh config file to our needs
-
- - name: Enable password auth
-   command:
