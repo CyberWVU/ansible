@@ -1,4 +1,4 @@
 # Enable PubKeyAuthentication
 
  - name: Enable pubkey auth
-   command: sed -i '/PubkeyAuthentication no/c\PubkeyAuthentication yes' /etc/ssh/sshd_config
+   command: sed -i '/PubkeyAuthentication/c\PubkeyAuthentication yes' /etc/ssh/sshd_config

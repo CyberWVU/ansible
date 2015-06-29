@@ -1,0 +1,7 @@
+---
+# Netcat installer for systems using the apt package manager
+
+ - name: Install netcat package via apt
+   apt: >
+     name=netcat
+     state=latest

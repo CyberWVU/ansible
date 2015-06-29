@@ -1,0 +1,12 @@
+---
+# This is the main.yml file for the netcat role
+
+ - include: apt_package.yml
+   include: netcat_start_apt.yml
+   when: ansible_pkg_mgr == 'apt'
+
+ - include: yum_package.yml
+   include: netcat_start_yum.yml
+   when: ansible_pkg_mgr == 'yum'
+
+

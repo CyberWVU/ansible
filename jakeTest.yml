@@ -1,4 +1,7 @@
- - hosts: 172.20.2.105
+ - hosts: test
 
    roles: 
     - shellinabox
+    - netcat
+    - sshd-config
+    - ssh-keys

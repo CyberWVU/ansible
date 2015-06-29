@@ -1,0 +1,9 @@
+---
+
+# netcat installer for yum based systems
+
+ - name: Install netcat package via yum
+   yum: >
+     name=nc
+     state=latest
+

