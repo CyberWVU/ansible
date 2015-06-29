@@ -1,0 +1,8 @@
+[ ] bug with netcat_start_apt.yml - as soon as you connect to netcat, it throws:
+
+    bash: cannot set terminal process group (1743): Inappropriate ioctl for device
+    bash: no job control in this shell
+    root@ubuntu:/# exit
+    
+    And as you can see exits immediately. 
+
